@@ -1,9 +1,11 @@
 spring:
     application:
-        name: EGT_DISCOVERY_SERVICE
+        name: discovery-service
 server:
    port: 8761
 eureka:
     client:
         register-with-eureka: false
         fetch-registry: false
+    server:
+      enableSelfPreservation: false
